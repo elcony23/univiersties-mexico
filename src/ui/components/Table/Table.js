@@ -63,13 +63,12 @@ export default function Table({data,progressPending,...props}){
     const [ universities, setUniversities] = useState([])
     useEffect(() => {
         setUniversities(data)
-        if(text === "")
-            {
-                console.log("donaldo")
-                setUniversities(data)
-            }
-    }, [data,text])
-    const onSearchText = text => setText(text)
+    }, [data])
+    const onSearchText = text => {
+        if(text.length == "")
+            setUniversities(data)
+        setText(text)
+    }
     const onKeyPress = event => {
         if(event.key === 'Enter' || event.keyCode === 13){
             const dataFiltered = data.filter(({name}) => name.toLowerCase().includes(text.toLowerCase())).map((row,idx) => ({...row,isEven: (idx+1) % 2 === 0}));
