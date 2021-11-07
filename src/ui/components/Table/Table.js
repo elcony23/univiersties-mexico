@@ -80,7 +80,7 @@ export default function Table({data,progressPending,...props}){
         <div style={{display:'flex',justifyContent:'flex-end',margin:'20px 20px 20px 0px'}}>
             <div style={{display:'flex',flexDirection:'column'}}>
                 <label htmlFor="temp-id">Buscar</label>
-                <input style={{padding: 10,border: '1px solid #6c7ae0',borderRadius: 10,width: 250}} onKeyPress={(event) =>onKeyPress(event)} type="text" id="temp-id" value={text} className="input-search" onChange={e => onSearchText(e.target.value)}/>
+                <input placeholder="Ingrese nombre de universidad"  style={{padding: 10,border: '1px solid #6c7ae0',borderRadius: 10,width: 250}} onKeyPress={(event) =>onKeyPress(event)} type="text" id="temp-id" value={text} className="input-search" onChange={e => onSearchText(e.target.value)}/>
             </div>
         </div>
         <DataTable
