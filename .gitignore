@@ -1,0 +1,10 @@
+# Directories
+node_modules
+dist
+.cache
+.cachedocs/
+docs
+
+config.js
+.DS_Store
+/node_modules

@@ -1,0 +1,11 @@
+// This is a sample stylesheet, if you're going to use it don't forget to import it.
+.container-table{
+    display: flex;
+    flex-direction: column;
+}
+.input-search{
+    padding: 10px !important;
+    border: 1px solid #6c7ae0 !important;
+    border-radius: 10px !important;
+    width: 200px !important;
+}
